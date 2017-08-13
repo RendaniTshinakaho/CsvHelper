@@ -1,0 +1,17 @@
+# CsvHelper
+=======================
+TECHNICAL DECISIONS
+=======================
+ASP.NET MVC 5.0
+CsvHelper Nuget Package Tool.
+
+--I HAVE LOVED TO DEMONSTRATE THE BELOW BUT DUE TO TIME, THIS WERE EXCLUDED---
+FULL UNIT TESTING
+ERROR LOGGING (NLG FRAMEWORK)
+DEPENDENCY INJECTIONS
+
+======================
+INSTALLATION
+======================
+IIS HOSTING.
+
