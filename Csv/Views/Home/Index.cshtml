@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+@model List<Csv.Models.CarDisplay>
+
+<p class="alert-warning">
+    Upload your File!
+</p>
+
+<table class="table table-bordered table-responsive table-hover">
+    <tr class="alert-info">
+        <th>5000 Code</th>
+        <th>Body Style</th>
+        <th>Engine</th>
+        <th>Derivative</th>
+        <th>Model Code</th>
+        <th>Trim Level</th>
+        <th>Derivative Pack code</th>
+        <th>Par/Country Code</th>
+        <th>Model Availability</th>
+        <th>Importer FOB Price</th>
+        <th>Freight</th>
+        <th>Insurance (Calculation - Derivative * 1.1*%)</th>
+    </tr>
+    @if (Model != null)
+    {
+        foreach (var c in Model)
+        {
+            <tr>
+                <td>@c.Code</td>
+                <td>@c.BodyStyle</td>
+                <td>@c.Engine</td>
+                <td>@c.Derivative</td>
+                <td>@c.ModelCode</td>
+                <td>@c.TrimLevel</td>
+                <td>@c.DerivativeParkCode</td>
+                <td>@c.CountryCode</td>
+                <td>@c.ModelAvailabilty</td>
+                <td>@c.ImporterPrice</td>
+                <td>@c.Freight</td>
+                <td>@c.Insurance</td>
+            </tr>
+        }
+    }
+</table>
+
+<form action="" method="POST" enctype="multipart/form-data">
+    <table style="margin-top:150px">
+        <tr>
+            <td>
+                <label for="file">Filename:</label>
+            </td>
+            <td>
+                <input type="file" name="file" id="file" />
+            </td>
+            <td><input type="submit" value="Upload" /></td>
+        </tr>
+    </table>
+</form>
+
+
